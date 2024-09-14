@@ -1,0 +1,70 @@
+# Air Canvas
+
+Air Canvas is an interactive drawing application that uses computer vision and hand tracking to create a virtual drawing experience. Users can draw on a digital canvas using hand gestures captured by a webcam.
+
+## Features
+
+- Real-time hand tracking using MediaPipe
+- Four color options: Blue, Green, Red, and Yellow
+- Clear canvas functionality
+- Intuitive gesture-based drawing
+
+## Requirements
+
+- Python 3.x
+- OpenCV (cv2)
+- NumPy
+- MediaPipe
+
+## Installation
+
+1. Clone this repository or download the source code.
+2. Install the required libraries using pip:
+
+```
+pip install opencv-python numpy mediapipe
+```
+
+## Usage
+
+1. Run the script:
+
+```
+python air_canvas.py
+```
+
+2. A webcam window and a canvas window will appear.
+3. Use your index finger to draw. Bring your thumb close to your index finger to stop drawing temporarily.
+4. Use the color selection buttons at the top of the window to change colors.
+5. Use the "CLEAR" button to reset the canvas.
+6. Press 'q' to quit the application.
+
+## How it Works
+
+1. The application uses your computer's webcam to capture video input.
+2. MediaPipe is used to detect and track hand landmarks in real-time.
+3. The position of your index finger is used as the drawing point.
+4. When your thumb is close to your index finger, drawing is paused.
+5. The application provides a live view of your hand with landmark tracking, as well as a separate canvas where your drawings appear.
+
+## Customization
+
+You can modify the code to adjust various parameters such as:
+- Canvas size
+- Color options
+- Brush thickness
+- Gesture sensitivity
+
+## Troubleshooting
+
+- Ensure your webcam is properly connected and accessible.
+- Good lighting conditions will improve hand tracking accuracy.
+- If you experience performance issues, try reducing the webcam resolution in the code.
+
+## Contributing
+
+Contributions to improve Air Canvas are welcome. Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
+
+## License
+
+This project is open-source and available under the MIT License.
